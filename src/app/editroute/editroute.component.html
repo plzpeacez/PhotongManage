@@ -1,1 +1,66 @@
 <app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li class="active"><a routerLink="/login">Overview <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a routerLink="/mapphotong">เส้นทาง</a></li>
+        <li><a routerLink="/photongstop">ป้ายรถ</a></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <!--<li><a routerLink="/editroute">แก้ไข เส้นทาง</a></li>-->
+        <li><a routerLink="/editroute">แก้ไขป้ายจอดรถ</a></li>
+        <!--<li><a href="">One more nav</a></li>
+        <li><a href="">Another nav item</a></li>
+        <li><a href="">More navigation</a></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="">Nav item again</a></li>
+        <li><a href="">One more nav</a></li>
+        <li><a href="">Another nav item</a></li>-->
+      </ul>
+    </div>
+    <div class="col-md-10">
+      <p-dataTable [value]="cars" selectionMode="single" [(selection)]="selectedCar" (onRowSelect)="onRowSelect($event)" [paginator]="true"
+        [rows]="20" [responsive]="true">
+        <p-header>Photong manager</p-header>
+        <p-column field="year" header="ลำดับที่" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+        <p-column field="brand" header="ชื่อ" [sortable]="true"></p-column>
+        <p-column field="vin" header="latitude" [sortable]="true"></p-column>
+        <p-column field="vin" header="longitude" [sortable]="true"></p-column>
+        <p-footer>
+          <div class="ui-helper-clearfix" style="width:100%"><button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button>
+</div>
+</p-footer>
+</p-dataTable>
+
+<p-dialog header="Bus Stop Detail" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
+  <div class="ui-grid ui-grid-responsive ui-fluid ui-grid-pad" *ngIf="car">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-4"><label for="vin">ลำดับที่</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="vin" [(ngModel)]="car.vin" /></div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-4"><label for="brand">ชื่อ</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="brand" [(ngModel)]="car.year" /></div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-4"><label for="brand">latitude</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="brand" [(ngModel)]="car.brand" /></div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-4"><label for="color">longitude</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="color" [(ngModel)]="car.color" /></div>
+    </div>
+  </div>
+  <footer>
+    <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="delete()" label="Delete"></button>
+      <button type="button" pButton icon="fa-check" (click)="save()" label="Save"></button>
+    </div>
+  </footer>
+</p-dialog>
+</div>
+</div>
+</div>
