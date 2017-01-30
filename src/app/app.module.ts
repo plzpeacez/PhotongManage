@@ -9,8 +9,10 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 
 import {routing} from './app.routing';
 import { TemplateComponent } from './template/template.component';
-
+import { AgmCoreModule } from 'angular2-google-maps/core';
 import {DropdownModule} from 'primeng/primeng';
+import { PhotongComponent } from './photong/photong.component';
+import { PhotongstopComponent } from './photongstop/photongstop.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,18 @@ import {DropdownModule} from 'primeng/primeng';
     NavbarComponent,
     LoginpageComponent,
     TemplateComponent,
+    PhotongComponent,
+    PhotongstopComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     routing,
-    DropdownModule
+    DropdownModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBTT9UOlmNjSStQdUc0GcDXa2cfZG4EdB4'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
