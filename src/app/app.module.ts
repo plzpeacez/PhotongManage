@@ -7,16 +7,24 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 
+import {routing} from './app.routing';
+import { TemplateComponent } from './template/template.component';
+
+import {DropdownModule} from 'primeng/primeng';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginpageComponent
+    LoginpageComponent,
+    TemplateComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
