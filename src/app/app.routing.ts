@@ -6,6 +6,7 @@ import {LoginpageComponent} from './loginpage/loginpage.component';
 import {TemplateComponent} from './template/template.component';
 import {PhotongComponent} from './photong/photong.component';
 import {PhotongstopComponent} from './photongstop/photongstop.component';
+import {EditrouteComponent} from './editroute/editroute.component';
 
 const appRoutes: Routes = [
     {
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
     {
         path:'photongstop',
         component: PhotongstopComponent
+    },
+    {
+        path:'editroute',
+        component: EditrouteComponent
     },
 ];
 

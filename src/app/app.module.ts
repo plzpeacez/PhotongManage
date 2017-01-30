@@ -13,6 +13,7 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
 import {DropdownModule} from 'primeng/primeng';
 import { PhotongComponent } from './photong/photong.component';
 import { PhotongstopComponent } from './photongstop/photongstop.component';
+import { EditrouteComponent } from './editroute/editroute.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PhotongstopComponent } from './photongstop/photongstop.component';
     TemplateComponent,
     PhotongComponent,
     PhotongstopComponent,
+    EditrouteComponent,
   ],
   imports: [
     BrowserModule,
