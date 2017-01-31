@@ -6,10 +6,27 @@
 
 <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
   <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
-  <sebm-google-map-polyline>
-         <sebm-google-map-polyline-point [latitude]="latA" [longitude]="lngA">
-         </sebm-google-map-polyline-point>
-         <sebm-google-map-polyline-point [latitude]="latB" [longitude]="lngB">
-         </sebm-google-map-polyline-point>
-     </sebm-google-map-polyline>
+  <sebm-google-map-marker [latitude]="val1" [longitude]="val2"></sebm-google-map-marker>
+  <!--<sebm-google-map-polyline>
+    <sebm-google-map-polyline-point [latitude]="latA" [longitude]="lngA">
+    </sebm-google-map-polyline-point>
+    <sebm-google-map-polyline-point [latitude]="latB" [longitude]="lngB">
+    </sebm-google-map-polyline-point>
+  </sebm-google-map-polyline>-->
 </sebm-google-map>
+
+<br>
+<h3>เพิ่มพิกัด ป้ายจอดรถประจำทาง</h3>
+<div class="row">
+  <div class="container">
+    <h4>latitude</h4>
+    <p-inputMask mask="9.999999" [(ngModel)]="lat" placeholder="9.999999">{{lat}}</p-inputMask>
+    <h4>longitude</h4>
+    <p-inputMask mask="99.999999" [(ngModel)]="lng" placeholder="99.999999">{{lng}}</p-inputMask>
+    <br>
+    <!--<button pButton type="button" label="Clear" icon="fa-close" (click)="val1=null"></button>-->
+    <br>
+    <button pButton type="button" label="Save" icon="fa-check" (click)="latlng()"></button>
+    <br><br>
+  </div>
+</div>
