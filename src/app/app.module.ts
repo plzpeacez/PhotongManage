@@ -28,6 +28,7 @@ import { PhotongstopComponent } from './photongstop/photongstop.component';
 import { EditrouteComponent } from './editroute/editroute.component';
 import { PhreportComponent } from './phreport/phreport.component';
 import { EditorpageComponent } from './editorpage/editorpage.component';
+import { BusstopgmapComponent } from './busstopgmap/busstopgmap.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { EditorpageComponent } from './editorpage/editorpage.component';
     EditrouteComponent,
     PhreportComponent,
     EditorpageComponent,
+    BusstopgmapComponent,
   ],
   imports: [
     BrowserModule,
