@@ -10,6 +10,8 @@ import {EditrouteComponent} from './editroute/editroute.component';
 import {PhreportComponent} from './phreport/phreport.component';
 import {EditorpageComponent} from './editorpage/editorpage.component';
 import {BusstopgmapComponent} from './busstopgmap/busstopgmap.component';
+import { overview2Component } from './2overview/2overview.component';
+import { overview3Component } from './3overview/3overview.component';
 
 const appRoutes: Routes = [
     {
@@ -43,7 +45,15 @@ const appRoutes: Routes = [
     {
         path:'editbusstop',
         component: BusstopgmapComponent
-    }
+    },
+    {
+        path:'2overview',
+        component: overview2Component
+    },
+    {
+        path:'3overview',
+        component: overview3Component
+    },
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
