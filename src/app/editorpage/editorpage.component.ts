@@ -7,13 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorpageComponent implements OnInit {
 
-  text1: string = '<div>Hello World!</div><div>PrimeNG <b>Editor</b> Rocks</div><div><br></div>';
+  msgs: any[] = [];
+
+  text: string;
+
+  text1: string;
 
   text2: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  save() {
+    this.msgs = [];
+    this.msgs.push({ severity: 'info', summary: 'Success', detail: 'Data Saved' });
+  }
+
+  clear() {
+    this.text1 = null;
+    this.text = null;
+    this.msgs = [];
+    this.msgs.push({ severity: 'info', summary: 'Success', detail: 'Data Cleared' });
   }
 
 }

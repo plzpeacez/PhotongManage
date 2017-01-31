@@ -21,6 +21,7 @@ import {PanelModule} from 'primeng/primeng';
 import {GrowlModule} from 'primeng/primeng';
 import {SplitButtonModule} from 'primeng/primeng';
 import {EditorModule} from 'primeng/primeng';
+import {InputMaskModule} from 'primeng/primeng';
 
 import { PhotongComponent } from './photong/photong.component';
 import { PhotongstopComponent } from './photongstop/photongstop.component';
@@ -55,6 +56,7 @@ import { EditorpageComponent } from './editorpage/editorpage.component';
     GrowlModule,
     SplitButtonModule,
     EditorModule,
+    InputMaskModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBTT9UOlmNjSStQdUc0GcDXa2cfZG4EdB4'
     })
