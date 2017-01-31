@@ -8,7 +8,7 @@ export class CarService {
     constructor(private http: Http) {}
 
     getCarsMedium() {
-        return this.http.get('app/resources/cars-medium1.json')
+        return this.http.get('app/resources/cars.json')
                     .toPromise()
                     .then(res => <Car[]> res.json().data)
                     .then(data => { return data; });

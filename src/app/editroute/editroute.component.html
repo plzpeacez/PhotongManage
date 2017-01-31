@@ -20,24 +20,16 @@
           </ul>
           </div>
         </div>
-        <!--<li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
-        <li><a href="">More navigation</a></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>-->
       </ul>
     </div>
     <div class="col-md-10">
       <p-dataTable [value]="cars" selectionMode="single" [(selection)]="selectedCar" (onRowSelect)="onRowSelect($event)" [paginator]="true"
         [rows]="15" [responsive]="true">
         <p-header>ตำแหน่งป้ายจอดรถ สายที่ 1</p-header>
-        <p-column field="id" header="ลำดับที่" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
-        <p-column field="name" header="ชื่อ" [sortable]="true"></p-column>
-        <p-column field="latitude" header="latitude" [sortable]="true"></p-column>
-        <p-column field="longitude" header="longitude" [sortable]="true"></p-column>
+        <p-column field="vin" header="ลำดับที่" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+        <p-column field="brand" header="ชื่อ" [sortable]="true"></p-column>
+        <p-column field="year" header="latitude" [sortable]="true"></p-column>
+        <p-column field="color" header="longitude" [sortable]="true"></p-column>
         <p-footer>
           <div class="ui-helper-clearfix" style="width:100%"><button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button>
 </div>
@@ -52,11 +44,11 @@
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-4"><label for="brand">ชื่อ</label></div>
-      <div class="ui-grid-col-8"><input pInputText id="brand" [(ngModel)]="car.year" /></div>
+      <div class="ui-grid-col-8"><input pInputText id="brand" [(ngModel)]="car.brand" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-4"><label for="brand">latitude</label></div>
-      <div class="ui-grid-col-8"><input pInputText id="brand" [(ngModel)]="car.brand" /></div>
+      <div class="ui-grid-col-8"><input pInputText id="year" [(ngModel)]="car.year" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-4"><label for="color">longitude</label></div>
