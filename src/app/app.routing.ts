@@ -9,6 +9,7 @@ import {PhotongstopComponent} from './photongstop/photongstop.component';
 import {EditrouteComponent} from './editroute/editroute.component';
 import {PhreportComponent} from './phreport/phreport.component';
 import {EditorpageComponent} from './editorpage/editorpage.component';
+import {BusstopgmapComponent} from './busstopgmap/busstopgmap.component';
 
 const appRoutes: Routes = [
     {
@@ -38,6 +39,10 @@ const appRoutes: Routes = [
     {
         path:'editorpage',
         component: EditorpageComponent
+    },
+    {
+        path:'editbusstop',
+        component: BusstopgmapComponent
     }
 ];
 
