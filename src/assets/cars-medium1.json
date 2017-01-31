@@ -1,0 +1,22 @@
+{
+    "data":[
+	{"id":"1","name":"BigC","latitude":"7.896844","longitude":"98.368431"},
+	{"id":"2","name":"point2","latitude":"7.906094","longitude":"98.369024"},
+	{"id":"3","name":"point3","latitude":"7.898514","longitude":"98.383368"},
+	{"id":"4","name":"point4","latitude":"7.890437","longitude":"98.389899"},
+	{"id":"5","name":"point5","latitude":"7.889291","longitude":"98.386203"},
+	{"id":"6","name":"point6","latitude":"7.881771","longitude":"98.383985"},
+	{"id":"7","name":"point7","latitude":"7.883005","longitude":"98.387231"},
+	{"id":"8","name":"point8","latitude":"7.883353","longitude":"98.393679"},
+	{"id":"9","name":"point9","latitude":"7.880165","longitude":"98.392313"},
+	{"id":"10","name":"point10","latitude":"7.878115","longitude":"98.393096"},
+	{"id":"11","name":"point11","latitude":"7.874051","longitude":"98.393885"},
+	{"id":"12","name":"point12","latitude":"7.871419","longitude":"98.393953"},
+	{"id":"13","name":"point13","latitude":"7.868661","longitude":"98.395767"},
+	{"id":"14","name":"point14","latitude":"7.863928","longitude":"98.400856"},
+	{"id":"15","name":"point15","latitude":"7.862845","longitude":"98.401488"},
+	{"id":"16","name":"point16","latitude":"7.863010","longitude":"98.398790"},
+	{"id":"17","name":"point17","latitude":"7.866506","longitude":"98.392760"},
+	{"id":"18","name":"point18","latitude":"7.869540","longitude":"98.392430"}
+	]
+}

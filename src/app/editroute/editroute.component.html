@@ -6,7 +6,7 @@
         <li class="active"><a routerLink="/login">Overview <span class="sr-only">(current)</span></a></li>
         <li><a routerLink="/reports">แก้ไขข้อความที่แสดงในระบบ</a></li>
         <li><a routerLink="/mapphotong">เส้นทาง</a></li>
-        <li><a routerLink="/photongstop">ป้ายรถ</a></li>
+        <li><a routerLink="/editbusstop">ป้ายรถ</a></li>
       </ul>
       <ul class="nav nav-sidebar">
         <!--<li><a routerLink="/editroute">แก้ไข เส้นทาง</a></li>-->
@@ -15,8 +15,8 @@
           <div class="row">
           <ul>
             <li><a routerLink="/editroute">สายที่ 1</a></li>
-            <li>สายที่ 2</li>
-            <li>สายที่ 3</li>
+            <li><a routerLink="/editroute">สายที่ 2</a></li>
+            <li><a routerLink="/editroute">สายที่ 3</a></li>
           </ul>
           </div>
         </div>
@@ -34,10 +34,10 @@
       <p-dataTable [value]="cars" selectionMode="single" [(selection)]="selectedCar" (onRowSelect)="onRowSelect($event)" [paginator]="true"
         [rows]="15" [responsive]="true">
         <p-header>ตำแหน่งป้ายจอดรถ สายที่ 1</p-header>
-        <p-column field="year" header="ลำดับที่" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
-        <p-column field="color" header="ชื่อ" [sortable]="true"></p-column>
-        <p-column field="vin" header="latitude" [sortable]="true"></p-column>
-        <p-column field="vin" header="longitude" [sortable]="true"></p-column>
+        <p-column field="id" header="ลำดับที่" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+        <p-column field="name" header="ชื่อ" [sortable]="true"></p-column>
+        <p-column field="latitude" header="latitude" [sortable]="true"></p-column>
+        <p-column field="longitude" header="longitude" [sortable]="true"></p-column>
         <p-footer>
           <div class="ui-helper-clearfix" style="width:100%"><button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button>
 </div>

@@ -3,7 +3,7 @@ import { Car } from './car/car';
 import { CarService } from './car/carservice';
 
 class PrimeCar implements Car {
-    constructor(public vin?, public year?, public brand?, public color?) {}
+    constructor(public id?, public name?, public latitude?, public longitude?) {}
 }
 
 @Component({
