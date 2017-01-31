@@ -5,13 +5,23 @@
     <div class="col-md-2 sidebar">
       <ul class="nav nav-sidebar">
         <li class="active"><a routerLink="/login">Overview <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Reports</a></li>
+        <li><a routerLink="/reports">แก้ไขข้อความที่แสดงในระบบ</a></li>
         <li><a routerLink="/mapphotong">เส้นทาง</a></li>
         <li><a routerLink="/photongstop">ป้ายรถ</a></li>
       </ul>
       <ul class="nav nav-sidebar">
         <!--<li><a routerLink="/editroute">แก้ไข เส้นทาง</a></li>-->
-        <li><a routerLink="/editroute">แก้ไขป้ายจอดรถ</a></li>
+        <!--<li><a routerLink="/editroute">แก้ไข เส้นทาง</a></li>-->
+        <li><a data-toggle="collapse" href="#collapse1">แก้ไขป้ายจอดรถ</a></li>
+        <div id="collapse1" class="collapse">
+          <div class="row">
+            <ul>
+              <li><a routerLink="/editroute">สายที่ 1</a></li>
+              <li>สายที่ 2</li>
+              <li>สายที่ 3</li>
+            </ul>
+          </div>
+        </div>
         <!--<li><a href="">One more nav</a></li>
         <li><a href="">Another nav item</a></li>
         <li><a href="">More navigation</a></li>
@@ -23,32 +33,36 @@
       </ul>
     </div>
     <div class="col-md-10">
-      <h1 class="page-header">Dashboard</h1>
+      <h1 class="page-header">Overview</h1>
 
       <div class="row placeholders">
         <div class="col-xs-6 col-sm-3 placeholder">
-          <img src="http://vignette4.wikia.nocookie.net/thelorienlegacies/images/a/a1/Untitled.png/revision/20140321083309" width="200" height="200" class="img-responsive"
-            alt="Generic placeholder thumbnail">
-          <h4>Label</h4>
-          <span class="text-muted">Something else</span>
+          <img src="http://vignette4.wikia.nocookie.net/thelorienlegacies/images/a/a1/Untitled.png/revision/20140321083309" width="200"
+            height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+          <h4>ก่อนจะเป็น “รถโพถ้อง”</h4>
+          <span class="text-muted">ระหว่างปี พ.ศ. 2490 – พ.ศ. 2510 วิวัฒนาการสัญจรไปมาของคนภูเก็ตในยุคเริ่มแรกของการสัญจรทางบกด้วยการใช้สัตว์ลาก เช่น ใช้ม้าลากเรียกว่า “แบ้เชี้ย” ใช้ควายหรือวัวลากเรียก “หงูเชี้ย” และการใช้คนลากคือ “หล่างเชี้ย”</span>
         </div>
         <div class="col-xs-6 col-sm-3 placeholder">
-          <img src="http://images2.wikia.nocookie.net/__cb20111127121956/blazblue/images/8/88/Relius_Clover_(Emblem,_Crest).png" width="200" height="200" class="img-responsive"
-            alt="Generic placeholder thumbnail">
-          <h4>Label</h4>
-          <span class="text-muted">Something else</span>
+          <img src="http://images2.wikia.nocookie.net/__cb20111127121956/blazblue/images/8/88/Relius_Clover_(Emblem,_Crest).png" width="200"
+            height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+          <!--<h4>Label</h4>-->
+          <span class="text-muted">ซึ่งในขณะนั้นเป็นยุคเหมืองแร่เฟื่องฟู นายหัวเหมืองต่างๆ ได้ซื้อหารถยนต์ส่วนตัวและรถบรรทุกมาใช้งาน แต่เนื่องจากถนนหนทางเป็นหลุมเป็นบ่อ พระยารัษฎานุประดิษฐ์ สมุหเทศาภิบาล มณฑลภูเก็ต ในขณะนั้น ได้ขอความร่วมมือจากนายหัวเหมืองให้ช่วยก่อสร้างถนนสำหรับรถยนต์วิ่ง</span>
         </div>
         <div class="col-xs-6 col-sm-3 placeholder">
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/dd/a4/37/dda4374ad848b7bd695a7e507c94c3b6.jpg" width="200" height="200" class="img-responsive"
-            alt="Generic placeholder thumbnail">
-          <h4>Label</h4>
-          <span class="text-muted">Something else</span>
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/dd/a4/37/dda4374ad848b7bd695a7e507c94c3b6.jpg" width="200" height="200"
+            class="img-responsive" alt="Generic placeholder thumbnail">
+          <!--<h4>Label</h4>-->
+          <span class="text-muted">ต่อมาได้มีการเปิดถนนเส้นแรกอย่างเป็นทางการในภูเก็ต คือ ถนนเทพกระษัตรี ต่อมาก็เปิด ถนนภูเก็จ และถนนวิชิตสงคราม</span>
         </div>
         <div class="col-xs-6 col-sm-3 placeholder">
-          <img src="http://68.media.tumblr.com/80fbadf63969e689bcfc2ae7043bf5cb/tumblr_nombokw1rP1qfelsio1_400.png" width="200" height="200" class="img-responsive"
-            alt="Generic placeholder thumbnail">
-          <h4>Label</h4>
-          <span class="text-muted">Something else</span>
+          <img src="http://68.media.tumblr.com/80fbadf63969e689bcfc2ae7043bf5cb/tumblr_nombokw1rP1qfelsio1_400.png" width="200" height="200"
+            class="img-responsive" alt="Generic placeholder thumbnail">
+          <h4>“รถโพถ้องภูเก็ต” พาหนะย้อนอดีต สะท้อนเอกลักษณ์วันวาน</h4>
+          <span class="text-muted">รถสองแถวในภูเก็ตมีสีรถที่เป็นเอกลักษณ์ คือสี ฟ้า มีหลายขนาดทั้งรถกระบะ 4 ล้อ จุผู้โดยสารได้ประมาณ 11 คน หรือรถบรรทุก 6 ล้อ ที่บริการผู้โดยสารได้ตั้งแต่ 20-28 คน</span>
+        </div>
+        <div class="col-md-6 col-md-offset-6">
+          <br><br>
+          <h6>special thanks to: https://live.phuketindex.com/th/phuket-song-teaw-bus-2635.html</h6>
         </div>
       </div>
     </div>

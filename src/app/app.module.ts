@@ -17,10 +17,16 @@ import {DropdownModule} from 'primeng/primeng';
 import {DataTableModule,SharedModule} from 'primeng/primeng';
 import {CarService} from './editroute/car/carservice';
 import {InputTextModule,ButtonModule,DialogModule} from 'primeng/primeng';
+import {PanelModule} from 'primeng/primeng';
+import {GrowlModule} from 'primeng/primeng';
+import {SplitButtonModule} from 'primeng/primeng';
+import {EditorModule} from 'primeng/primeng';
 
 import { PhotongComponent } from './photong/photong.component';
 import { PhotongstopComponent } from './photongstop/photongstop.component';
 import { EditrouteComponent } from './editroute/editroute.component';
+import { PhreportComponent } from './phreport/phreport.component';
+import { EditorpageComponent } from './editorpage/editorpage.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +37,8 @@ import { EditrouteComponent } from './editroute/editroute.component';
     PhotongComponent,
     PhotongstopComponent,
     EditrouteComponent,
+    PhreportComponent,
+    EditorpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +51,10 @@ import { EditrouteComponent } from './editroute/editroute.component';
     InputTextModule,
     ButtonModule,
     DialogModule,
+    PanelModule,
+    GrowlModule,
+    SplitButtonModule,
+    EditorModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBTT9UOlmNjSStQdUc0GcDXa2cfZG4EdB4'
     })

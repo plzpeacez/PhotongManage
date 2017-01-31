@@ -7,6 +7,8 @@ import {TemplateComponent} from './template/template.component';
 import {PhotongComponent} from './photong/photong.component';
 import {PhotongstopComponent} from './photongstop/photongstop.component';
 import {EditrouteComponent} from './editroute/editroute.component';
+import {PhreportComponent} from './phreport/phreport.component';
+import {EditorpageComponent} from './editorpage/editorpage.component';
 
 const appRoutes: Routes = [
     {
@@ -29,6 +31,14 @@ const appRoutes: Routes = [
         path:'editroute',
         component: EditrouteComponent
     },
+    {
+        path:'reports',
+        component: PhreportComponent
+    },
+    {
+        path:'editorpage',
+        component: EditorpageComponent
+    }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
