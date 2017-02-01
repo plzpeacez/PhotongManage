@@ -33,6 +33,7 @@ import { EditorpageComponent } from './editorpage/editorpage.component';
 import { BusstopgmapComponent } from './busstopgmap/busstopgmap.component';
 import { overview2Component } from './2overview/2overview.component';
 import { overview3Component } from './3overview/3overview.component';
+import { BusroutemapComponent } from './busroutemap/busroutemap.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { overview3Component } from './3overview/3overview.component';
     BusstopgmapComponent,
     overview2Component,
     overview3Component,
+    BusroutemapComponent,
   ],
   imports: [
     BrowserModule,

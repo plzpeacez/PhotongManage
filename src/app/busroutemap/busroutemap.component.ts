@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-busstopgmap',
-  templateUrl: './busstopgmap.component.html',
-  styleUrls: ['./busstopgmap.component.css']
+  selector: 'app-busroutemap',
+  templateUrl: './busroutemap.component.html',
+  styleUrls: ['./busroutemap.component.css']
 })
-export class BusstopgmapComponent implements OnInit {
+export class BusroutemapComponent implements OnInit {
 
   options: any;
 
@@ -70,9 +70,9 @@ export class BusstopgmapComponent implements OnInit {
   initOverlays() {
     if (!this.overlays || !this.overlays.length) {
       this.overlays = [
-        new google.maps.Marker({ position: { lat: 7.889291, lng: 98.386203 }, title: "แยกอำเภอ" }),
-        new google.maps.Marker({ position: { lat: 7.881771, lng: 98.383985 }, title: "แยกไทหัว" }),
-        new google.maps.Marker({ position: { lat: 7.883005, lng: 98.387231 }, title: "แยกจุ้ยตุ่ย" }),
+        // new google.maps.Marker({ position: { lat: 7.889291, lng: 98.386203 }, title: "แยกอำเภอ" }),
+        // new google.maps.Marker({ position: { lat: 7.881771, lng: 98.383985 }, title: "แยกไทหัว" }),
+        // new google.maps.Marker({ position: { lat: 7.883005, lng: 98.387231 }, title: "แยกจุ้ยตุ่ย" }),
         // new google.maps.Polygon({
         //   paths: [
         //     { lat: 36.9177, lng: 30.7854 }, 
@@ -82,12 +82,12 @@ export class BusstopgmapComponent implements OnInit {
         //   ], strokeOpacity: 0.5, strokeWeight: 1, fillColor: '#1976D2', fillOpacity: 0.35
         // }),
         // new google.maps.Circle({ center: { lat: 36.90707, lng: 30.56533 }, fillColor: '#1976D2', fillOpacity: 0.35, strokeWeight: 1, radius: 1500 }),
-        // new google.maps.Polyline({ 
-        //   path: [
-        //     { lat: 7.889291, lng: 98.386203 },
-        //     { lat: 7.881771, lng: 98.383985 },
-        //     { lat: 7.883005, lng: 98.387231 }
-        //   ], geodesic: true, strokeColor: '#FF0000', strokeOpacity: 0.5, strokeWeight: 2 })
+        new google.maps.Polyline({ 
+          path: [
+            { lat: 7.889291, lng: 98.386203 },
+            { lat: 7.881771, lng: 98.383985 },
+            { lat: 7.883005, lng: 98.387231 }
+          ], geodesic: true, strokeColor: '#FF0000', strokeOpacity: 0.5, strokeWeight: 2 })
       ];
     }
   }

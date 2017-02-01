@@ -12,6 +12,7 @@ import {EditorpageComponent} from './editorpage/editorpage.component';
 import {BusstopgmapComponent} from './busstopgmap/busstopgmap.component';
 import { overview2Component } from './2overview/2overview.component';
 import { overview3Component } from './3overview/3overview.component';
+import { BusroutemapComponent } from './busroutemap/busroutemap.component';
 
 const appRoutes: Routes = [
     {
@@ -54,6 +55,10 @@ const appRoutes: Routes = [
         path:'3overview',
         component: overview3Component
     },
+    {
+        path:'editbusroute',
+        component: BusroutemapComponent
+    }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
