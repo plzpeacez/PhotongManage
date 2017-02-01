@@ -1,6 +1,6 @@
 export interface Car {
-    vin?;
-    brand?;
-    year?;
-    color?;
+    id?;
+    name?;
+    latitude?;
+    longitude?;
 }

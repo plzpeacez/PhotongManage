@@ -26,10 +26,10 @@
       <p-dataTable [value]="cars" selectionMode="single" [(selection)]="selectedCar" (onRowSelect)="onRowSelect($event)" [paginator]="true"
         [rows]="15" [responsive]="true">
         <p-header>ตำแหน่งป้ายจอดรถ สายที่ 1</p-header>
-        <p-column field="vin" header="ลำดับที่" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
-        <p-column field="brand" header="ชื่อ" [sortable]="true"></p-column>
-        <p-column field="year" header="latitude" [sortable]="true"></p-column>
-        <p-column field="color" header="longitude" [sortable]="true"></p-column>
+        <p-column field="id" header="ลำดับที่" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+        <p-column field="name" header="ชื่อ" [sortable]="true"></p-column>
+        <p-column field="latitude" header="latitude" [sortable]="true"></p-column>
+        <p-column field="longitude" header="longitude" [sortable]="true"></p-column>
         <p-footer>
           <div class="ui-helper-clearfix" style="width:100%"><button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button>
 </div>
@@ -39,20 +39,20 @@
 <p-dialog header="Bus Stop Detail" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
   <div class="ui-grid ui-grid-responsive ui-fluid ui-grid-pad" *ngIf="car">
     <div class="ui-grid-row">
-      <div class="ui-grid-col-4"><label for="vin">ลำดับที่</label></div>
-      <div class="ui-grid-col-8"><input pInputText id="vin" [(ngModel)]="car.vin" /></div>
+      <div class="ui-grid-col-4"><label for="id">ลำดับที่</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="vin" [(ngModel)]="car.id" /></div>
     </div>
     <div class="ui-grid-row">
-      <div class="ui-grid-col-4"><label for="brand">ชื่อ</label></div>
-      <div class="ui-grid-col-8"><input pInputText id="brand" [(ngModel)]="car.brand" /></div>
+      <div class="ui-grid-col-4"><label for="name">ชื่อ</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="name" [(ngModel)]="car.name" /></div>
     </div>
     <div class="ui-grid-row">
-      <div class="ui-grid-col-4"><label for="brand">latitude</label></div>
-      <div class="ui-grid-col-8"><input pInputText id="year" [(ngModel)]="car.year" /></div>
+      <div class="ui-grid-col-4"><label for="latitude">latitude</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="latitude" [(ngModel)]="car.latitude" /></div>
     </div>
     <div class="ui-grid-row">
-      <div class="ui-grid-col-4"><label for="color">longitude</label></div>
-      <div class="ui-grid-col-8"><input pInputText id="color" [(ngModel)]="car.color" /></div>
+      <div class="ui-grid-col-4"><label for="longitude">longitude</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="longitude" [(ngModel)]="car.longitude" /></div>
     </div>
   </div>
   <footer>
